@@ -28,3 +28,32 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+.muted {
+  color: #888;
+  font-size: 0.9rem;
+}
+.blog-img-small img {
+  max-width: 300px;
+  width: 300%;
+  display: block;
+  margin: 0rem 2rem;
+}
+.blog-img-row {
+  display: flex;
+  gap: 2rem;              /* 圖片之間的距離 */
+  margin: 2rem 0;
+}
+
+.blog-img-row img {
+  width: 300%;
+  max-width: 330px;       /* 每張圖的最大寬度 */
+  height: auto;
+  /*object-fit: cover;當圖片尺寸和框不合時，優雅地裁*/
+}
+.blog-img-row p {
+  margin: 0;       /* 把 p 的預設 margin 拿掉 */
+}
+.markdown h1 {
+  font-size: 2.2rem;
+  margin-top: 3rem;
+}

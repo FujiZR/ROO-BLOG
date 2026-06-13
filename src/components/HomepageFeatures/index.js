@@ -4,32 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: '鱷魚',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        想露營嗎
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '樹旁筆電',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        想買筆電
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: '女駭客',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        這是一個用電腦的女人
       </>
     ),
   },
@@ -50,6 +47,12 @@ function Feature({Svg, title, description}) {
 }
 
 export default function HomepageFeatures() {
+ const ENABLE_FEATURES = false;
+
+  if (!ENABLE_FEATURES) {
+    return null;
+  }
+
   return (
     <section className={styles.features}>
       <div className="container">
